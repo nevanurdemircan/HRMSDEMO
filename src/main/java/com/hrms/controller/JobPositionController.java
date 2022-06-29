@@ -20,6 +20,8 @@ public class JobPositionController {
     public List<JobPosition>allJobPosition(){
         return this.jobPositionService.findAll();
     }
+
+
     @GetMapping("fetch-one")
     public JobPosition fetchOne(@RequestParam long id){
         return this.jobPositionService.findOne(id);
